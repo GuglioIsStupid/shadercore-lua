@@ -53,6 +53,10 @@ function love.update(dt)
     shadercore:set("wave", "time", shadercore:get("wave", "time") + dt)
 end
 
+function love.resize(w, h)
+    shadercore:resize(w, h)
+end
+
 function love.draw()
     shadercore:push("wave")
     -- draw your game here
